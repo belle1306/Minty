@@ -37,7 +37,6 @@ public class CollectionFragment extends Fragment {
     private static final int GRID_VIEW_SPACING      = 8;
     private static final int GRID_VIEW_COLUMN_COUNT = 2;
 
-
     private Context            context;
     private CardPreviewAdapter cardAdapter;
     private List<Card>         listCards = new ArrayList<>();
@@ -91,7 +90,7 @@ public class CollectionFragment extends Fragment {
             }
         });
 
-        recyclerView.addItemDecoration(new GridAdapterItemDecoration(GRID_VIEW_COLUMN_COUNT, spacing, false));
+        recyclerView.addItemDecoration(new GridAdapterItemDecoration(GRID_VIEW_COLUMN_COUNT, spacing, true));
         recyclerView.setLayoutManager(gridLayoutManager);
         recyclerView.setAdapter(cardAdapter);
 

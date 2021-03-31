@@ -29,8 +29,8 @@ public class CardPreviewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
     private static final String TAG = "SearchAdapter";
 
-    public static final int HEADER = 0;
-    public static final int GRID_ITEM = 1;
+    static final int HEADER = 0;
+    static final int GRID_ITEM = 1;
 
 
     private Context    context;
