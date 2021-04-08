@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#69c1c7</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#69c1c7</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#BB86FC</color>
     <color name="colorBlack">#000000</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorWhite60PercentOpacity">#96FFFFFF</color>
@@ -25,7 +25,15 @@
     <color name="inactiveIconColor">#c7c7c7</color>
     <color name="transparentBlack">#99222327</color>
 
+    <color name="textColorHighEmphasis">#DE000000</color>
+    <color name="textColorMediumEmphasis">#96000000</color>
+
 
     <color name="gradientStartColor">#667eea</color>
     <color name="gradientEndColor">#764ba2</color>
+
+    <color name="transparentTextviewBackground">#CC000000</color>
+
+    <color name="triGreenColor">#47B647</color>
+    <color name="triRedColor">#b64747</color>
 </resources>

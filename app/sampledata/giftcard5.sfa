@@ -1,0 +1,49 @@
+{
+  materials: [
+    {
+      name: '01___Default',
+      parameters: [
+        {
+          baseColor: 'testcoffee2',
+        },
+        {
+          baseColorTint: [
+            0.80000000000000004,
+            0.80000000000000004,
+            0.80000000000000004,
+            1,
+          ],
+        },
+        {
+          metallic: 1,
+        },
+        {
+          roughness: 0.093865000000000004,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/giftcard5.obj',
+    name: 'giftcard5',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata\\testcoffee2.jpg',
+      name: 'testcoffee2',
+      pipeline_name: 'testcoffee2.jpg',
+    },
+  ],
+  version: '0.54:2',
+}

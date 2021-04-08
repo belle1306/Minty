@@ -1,4 +1,4 @@
-package com.example.mintycards;
+package com.example.mintycards.ui;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -6,8 +6,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.mintycards.ui.CollectionFragment;
-import com.example.mintycards.ui.MintCardFragment;
+import com.example.mintycards.ui.collection.CollectionFragment;
+import com.example.mintycards.ui.mintcard.MintCardFragment;
 
 public class MainPagerAdapter extends FragmentPagerAdapter {
 

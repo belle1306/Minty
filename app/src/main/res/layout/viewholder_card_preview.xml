@@ -8,7 +8,7 @@
     android:padding="16dp">
 
     <ImageView
-        android:id="@+id/iv_card_preview"
+        android:id="@+id/iv_card_pic"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,34 +22,24 @@
         android:gravity="center"
         android:maxLines="2"
         android:layout_marginTop="8dp"
-        android:text="Shiny Charizard"
-        android:textColor="@color/colorBlack"
-        app:layout_constraintEnd_toEndOf="@+id/iv_card_preview"
+        android:text="Card name --"
+        android:textSize="16sp"
+        android:textColor="@color/textColorHighEmphasis"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/iv_card_pic"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_card_preview" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_card_pic" />
 
     <TextView
-        android:id="@+id/clothing_price"
+        android:id="@+id/tv_card_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="24 LINK"
-        android:textColor="@color/colorBlack"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/iv_card_preview"
+        android:text="Mosaic Id: --"
+        android:gravity="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_card_pic"
         app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/textColorHighEmphasis"
         app:layout_constraintTop_toBottomOf="@+id/tv_card_name" />
-
-    <ImageView
-        android:id="@+id/btn_cart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:background="?attr/actionBarItemBackground"
-        android:padding="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/iv_card_preview"
-        app:layout_constraintStart_toStartOf="@+id/iv_card_preview"
-        app:layout_constraintTop_toBottomOf="@+id/iv_card_preview"
-        app:srcCompat="@drawable/ic_purple_sort" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

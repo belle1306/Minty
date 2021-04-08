@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MintyCards</string>
+    <string name="error_gif">x or y bound size should be at least %1$dpx and file size should be no more than %2$sM</string>
+
+    <string name="card_preview">Uploading card preview to IPFS...</string>
+
+    <string name="card_texture">Uploading card texture to IPFS...</string>
+
+    <string name="card_mosaic">Creating Mosaic...</string>
+
+    <string name="card_metadata">Adding metadata to mosaic...</string>
 </resources>

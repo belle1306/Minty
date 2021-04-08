@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
@@ -13,25 +13,40 @@
         android:background="@drawable/background_gradient"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tv_app_name"
-            android:layout_width="wrap_content"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:drawableStart="@drawable/ic_mint"
-            android:drawablePadding="3dp"
-            android:fontFamily="@font/concert_one"
-            android:gravity="center"
-            android:text="Minty"
-            android:textColor="@color/colorWhite"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/tablayout"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_scrollFlags="scroll|enterAlways"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"/>
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <TextView
+                android:id="@+id/tv_app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_mint"
+                android:drawablePadding="3dp"
+                android:fontFamily="@font/concert_one"
+                android:text="Minty"
+                android:textColor="@color/colorWhite"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"/>
+
+            <ImageButton
+                android:id="@+id/btn_wallet"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_white_wallet"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="?attr/actionBarItemBackground"
+                android:padding="16dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         <com.google.android.material.tabs.TabLayout
@@ -41,6 +56,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:tabIndicatorColor="@color/colorWhite"
             app:tabIndicatorHeight="3dp"
+            android:background="@android:color/transparent"
             app:tabSelectedTextColor="@color/colorWhite"
             app:tabTextColor="@color/colorWhite60PercentOpacity" />
 

@@ -13,7 +13,7 @@
         android:gravity="center"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:text="16 collectable cards" />
+        android:text="-- collectable cards" />
 
     <ImageButton
         android:id="@+id/btn_dashboard"
@@ -23,6 +23,7 @@
         android:background="?attr/actionBarItemBackground"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
+        android:visibility="gone"
         app:srcCompat="@drawable/ic_purple_dashboard" />
 
     <ImageButton
@@ -33,5 +34,6 @@
         android:background="?attr/actionBarItemBackground"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
+        android:visibility="gone"
         app:srcCompat="@drawable/ic_purple_sort" />
 </RelativeLayout>

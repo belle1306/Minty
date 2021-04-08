@@ -1,17 +1,17 @@
-package com.example.mintycards.network;
+package com.example.mintycards.network.model;
 
-public class Card {
+public class CardTest {
     private boolean isHeader;
     private String card_preview;
     private String card_price;
     private String card_name;
 
-    private Card(boolean isHeader){
+    private CardTest(boolean isHeader){
         this.isHeader = isHeader;
     }
 
-    public static Card createHeader(){
-        return new Card(true);
+    public static CardTest createHeader(){
+        return new CardTest(true);
     }
 
     public boolean isHeader() {
